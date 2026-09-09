@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동물팡 🐾</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <header class="game-header">
+            <h1>🐾 동물팡</h1>
+            <p>같은 동물 3개 이상을 맞춰보세요!</p>
+        </header>
+
+        <div class="info-panel">
+            <div class="info-box">
+                <span>점수</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="info-box">
+                <span>콤보</span>
+                <strong id="combo">0</strong>
+            </div>
+
+            <div class="info-box">
+                <span>남은 이동</span>
+                <strong id="moves">30</strong>
+            </div>
+        </div>
+
+        <div class="game-board" id="gameBoard"></div>
+
+        <div class="message" id="message">
+            동물을 클릭해서 서로 위치를 바꿔보세요!
+        </div>
+
+        <button id="restartButton" class="restart-button">
+            🔄 다시 시작
+        </button>
+
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
